@@ -37,6 +37,7 @@ router.post('/login', (req, res) => {
       const token = signToken(user);
       console.log(token)
       res.status(200).json({
+        Message: "Hello, I am your token!",
         token
       });
     }
